@@ -51,7 +51,7 @@ h2{
 }
 
 h3{
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h4{
@@ -128,6 +128,10 @@ padding-top: 3rem;
     font-weight: 700;
 }
 
+.navegacion{
+    padding: 2rem 0;
+ }
+
 @media (min-width:768px){
     .navegacion{
        display: flex;
@@ -150,14 +154,33 @@ padding-top: 3rem;
     }
 }
 
+.blog h3{
+text-align: center;
+}
+
 .entrada{
+    display: flex;
+    flex-direction: column;
     border-bottom: 2px solid var(--gris);
     margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .entrada:last-of-type{  /* ELIMINA LO ULTIMO - LINEA */
     border: none;
     margin-bottom: 0;
+}
+
+.entrada__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entrada__imagen img{
+    width: 50%;
+    border-radius: 20px;
 }
 
 .boton{
@@ -235,6 +258,7 @@ border-bottom: 1px solid var(--gris);
         display: flex;
         /* gap: 2rem; --NO SOPORTA EN MAC*/
         justify-content: space-between;
+        align-items: center;
     }
 
     .nosotros__imagen,
@@ -299,8 +323,14 @@ border-bottom: 1px solid var(--gris);
 /* PAGINA ENTRADA */
 
 .entrada__informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
+    width: 80%;
 }
+
 
 /* PAGINA CONTACTO */
 .contacto-bg{
@@ -333,6 +363,7 @@ border-bottom: 1px solid var(--gris);
 .campo__field{
     flex: 1;
     border: 1px solid var(--gris);
+    width: 100%;
 }
 
 .campo__field--area{
@@ -343,9 +374,33 @@ border-bottom: 1px solid var(--gris);
     justify-content: center;
 }
 
+/* FOOTER 2 */
+.footer-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3vw ;
+    background-color: rgb(23, 9, 2);
 
+}
 
+.footer-container-2 button{
+    background-color: transparent;
+    padding: 0; 
+    margin: 0;
+    border: none;
+    color: var(--color1)
+}
+.footer-container-2 button:hover{
+    cursor: pointer;
+}
 
+.footer-container-2 p{
+    font-family: var(fuente_hack);
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+}
 
 
 
